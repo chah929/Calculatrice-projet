@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="container">
+    <div class="calc-body">
+
+      <div class="calc-screen">
+        <div class="calc-typed">{{operation}}</div>
+      </div>
+
+      <div class="calc-button-row">
+        <div (click)="effacer()" class="button c">C</div>
+        <div (click)="taper('(')" class="button l">(</div>
+        <div (click)="taper(')')" class="button l">)</div>
+        <div (click)="effacer1()" class="button l">
+          <= </div>
+        </div>
+        <div class="calc-button-row">
+          <div (click)="taper(7)" class="button">7</div>
+          <div (click)="taper(8)" class="button">8</div>
+          <div (click)="taper(9)" class="button">9</div>
+          <div (click)="taper('*')" class="button l">x</div>
+        </div>
+        <div class="calc-button-row">
+          <div (click)="taper(4)" class="button">4</div>
+          <div (click)="taper(5)" class="button">5</div>
+          <div (click)="taper(6)" class="button">6</div>
+          <div (click)="taper('-')" class="button l">−</div>
+        </div>
+        <div class="calc-button-row">
+          <div (click)="taper(1)" class="button">1</div>
+          <div (click)="taper(2)" class="button">2</div>
+          <div (click)="taper(3)" class="button">3</div>
+          <div (click)="taper('+')" class="button l">+</div>
+        </div>
+        <div class="calc-button-row">
+          <div (click)="taper('.')" class="button">.</div>
+          <div (click)="taper(0)" class="button">0</div>
+          <div (click)="taper('/')" class="button l">/</div>
+          <div (click)="egale()" class="button l e">=</div>
+        </div>
+      </div>
+    </div>
+</ion-content>
